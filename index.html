@@ -4,6 +4,45 @@
 		<title>Amber Dance Co.</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<style>
+			#hero{
+				background: url(assets/img/hero.png), #000;
+				background-repeat:no-repeat;
+				background-position:100px center;
+				padding:40px;
+			}
+			
+			#hero div{
+				margin-left:50%;
+				color:#d00000;
+			}
+			
+			#dancers, #cta{
+				padding:40px;
+			}
+			
+			.dancercontainer{
+				max-width:700px;
+				
+			}
+			
+			.dancercontainer .c33{
+				padding:20px;
+			}
+			
+			#ctaimg{
+				background:url(assets/img/cta.jpg);
+				background-size:cover;
+				background-position:top center;
+			}
+			
+			#ctaimg ~ div{
+				padding:10px;
+			}
+			
+			
+			
+		</style>
 	</head>
 	<body>
 <!-- header -->
@@ -19,7 +58,7 @@
 		</header>
 <!-- main content -->
 <!-- hero -->
-		<section>
+		<section id="hero">
 			<div>
 				<h1>Amber Dance Co.</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -28,31 +67,37 @@
 			</div>
 		</section>
 <!-- dancers -->
-		<section>
-			<h2>Meet the Dancers</h2>
+		<section id="dancers">
+			<h2 class="c100">Meet the Dancers</h2>
 			<section class="dancercontainer">
-				<div>
-					<img src="assets/img/d1.jpg">
-					<p>Maddy</p>
+				<div class="c33">
+					<div class="card">
+						<img src="assets/img/d1.jpg">
+						<p>Maddy</p>
+					</div>
 				</div>
-				<div>
-					<img src="assets/img/d2.jpg">
-					<p>Ash</p>
+				<div class="c33">
+					<div class="card">
+						<img src="assets/img/d2.jpg">
+						<p>Ash</p>
+					</div>
 				</div>
-				<div>
-					<img src="assets/img/d3.jpg">
-					<p>Sam</p>
+				<div class="c33">
+					<div class="card">
+						<img src="assets/img/d3.jpg">
+						<p>Sam</p>
+					</div>
 				</div>
 			</section>
 		</section>
 <!-- cta -->
-		<section>
-			<div>
+		<section id="cta">
+			<div id="ctaimg" class="c50">
 			</div>
-			<div>
+			<div class="c50">
 				<h2>Contact Us</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-				<p><a href="contact.html">Book Today</a></p>
+				<p><a href="contact.html" class="btn">Book Today</a></p>
 			</div>
 		</section>
 

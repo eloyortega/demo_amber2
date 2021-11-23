@@ -7,14 +7,192 @@ font-family: 'Josefin Sans', sans-serif;
 */
 
 /*
---xiketic: #03071eff;
---dark-sienna: #370617ff;
---rosso-corsa: #d00000ff;
---orange-web: #faa307ff;
+--xiketic: #03071e;
+--dark-sienna: #370617;
+--rosso-corsa: #d00000;
+--orange-web: #faa307;
 */
 
+/* presets */
 *{
 	box-sizing:border-box;
 	margin:0;
 	font-family: 'Josefin Sans', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Fjalla One', sans-serif;
+}
+
+h1{
+	font-size:60px;
+}
+
+h2{
+	font-size: 40px;
+}
+
+img{
+	max-width:100%;
+	width:auto;
+}
+
+body{
+	background: url(../img/bg.jpg);
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+.btn{
+	display:inline-block;
+	text-decoration: none;
+	background:#faa307;
+	color:#000;
+	padding:5px 20px;
+	margin-top:10px;
+	border:none;
+	border-radius:5px;
+	box-shadow:2px 2px 10px -5px #888;
+}
+
+@keyframes btnpop{
+	0%{
+		background:#faa307;
+		color:#000;
+		transform:scale(1,1);
+		box-shadow:2px 2px 10px -5px #888;
+	}
+	
+	100%{
+		background:#03071e;
+		color:#faa307;
+		transform:scale(1.1, 1.1);
+		box-shadow:5px 5px 10px 0px #888;
+
+	}
+}
+
+.btn:hover{
+	animation:.5s btnpop ease-in 1;
+	background:#03071e;
+	color:#faa307;
+	transform:scale(1.1, 1.1);
+	box-shadow:5px 5px 10px 0px #888;
+}
+
+
+/* nav */
+header{
+	border-bottom:5px solid #d00000;
+	position:relative;
+}
+
+#logo{
+	font-size:20px;
+}
+
+#logo a{
+	font-family: 'Abril Fatface', cursive;
+	text-decoration:none;
+	color:#370617;
+	display:inline-block;
+}
+
+nav{
+	position:absolute;
+	top:6px;
+	right:6px;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav li{
+	display:inline-block;
+}
+
+nav a{
+	text-decoration:none;
+	color:#faa307;
+	display: block;
+	padding:0px 3px;
+}
+
+nav a:hover{
+	color:#03071e;
+}
+
+
+/*column structs*/
+header, footer, section{
+	background:#fff;
+}
+
+section{
+	display:flex;
+	flex-wrap:wrap;
+	max-width:800px;
+	margin:0 auto;
+}
+
+.c100{
+	width:100%;
+}
+
+.c50{
+	width:50%;
+}
+
+.c33{
+	width:33.333333%;
+}
+
+
+/*footer*/
+footer{
+	padding:40px;
+	text-align:center;
+	border-top:5px solid #d00000;
+	
+	
+}
+
+footer h2{
+	
+	width:100%;
+}
+
+.fa{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	background:#faa307;
+	border-radius:50%;
+	font-size:20px;
+	text-decoration: none;
+	padding:10px;
+	color:#000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
